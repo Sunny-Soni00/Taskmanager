@@ -37,9 +37,9 @@ export const API_ENDPOINTS = {
 // LOCAL STORAGE KEYS
 // ============================================
 export const STORAGE_KEYS = {
-  TOKEN: 'umanager_token',
-  USER: 'umanager_user',
-  THEME: 'umanager_theme',
+  TOKEN: 'taskmanager_token',
+  USER: 'taskmanager_user',
+  THEME: 'taskmanager_theme',
 };
 
 // ============================================
@@ -75,7 +75,7 @@ export const TASK_STATUSES = [
 // ============================================
 // APP CONFIGURATION
 // ============================================
-export const APP_NAME = 'Umanager';
+export const APP_NAME = 'Task Manager';
 export const APP_TAGLINE = 'Collaborative Task Management for Teams';
 export const APP_DESCRIPTION = 'Streamline your workflow with powerful task management, team collaboration, and project tracking - all in one place.';
 
@@ -173,14 +173,14 @@ export const TESTIMONIALS = [
     name: 'Priya Sharma',
     role: 'Product Manager at Tech Startup',
     avatar: 'PS',
-    content: 'Umanager transformed how our team collaborates. The interface is intuitive and the features are exactly what we needed.',
+    content: 'Task Manager transformed how our team collaborates. The interface is intuitive and the features are exactly what we needed.',
     rating: 5,
   },
   {
     name: 'Rahul Verma',
     role: 'Freelance Developer',
     avatar: 'RV',
-    content: 'As a freelancer managing multiple projects, Umanager helps me stay organized and meet all my deadlines effortlessly.',
+    content: 'As a freelancer managing multiple projects, Task Manager helps me stay organized and meet all my deadlines effortlessly.',
     rating: 5,
   },
   {
