@@ -114,8 +114,8 @@ const Footer = () => {
         {/* Bottom */}
         <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-gray-600 dark:text-gray-400 text-sm">
-              © {currentYear} Umanager. All rights reserved.
+            <p className="text-gray-600 dark:text-gray-400">
+              © {currentYear} Task Manager. All rights reserved.
             </p>
             <div className="flex gap-6">
               <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 text-sm transition-colors">

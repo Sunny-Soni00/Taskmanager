@@ -22,7 +22,7 @@ const CTASection = () => {
               Ready to get started?
             </h2>
             <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-              Join thousands of teams already using Umanager to streamline their workflow
+              Join thousands of teams already using Task Manager to streamline their workflow
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to="/signup">

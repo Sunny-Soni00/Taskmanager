@@ -27,7 +27,7 @@ const Logo = ({ size = 'md', showText = true, className = '' }) => {
       </div>
       {showText && (
         <span className={`font-bold ${sizes[size].text} text-gray-900 dark:text-white tracking-tight`}>
-          Umanager
+          Task Manager
         </span>
       )}
     </div>

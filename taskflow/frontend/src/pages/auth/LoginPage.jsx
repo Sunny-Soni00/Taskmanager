@@ -113,7 +113,7 @@ const LoginPage = () => {
             Welcome Back
           </h1>
           <p className="text-gray-600 dark:text-gray-400">
-            Login in to continue to Umanager
+            Login in to continue to Task Manager
           </p>
         </div>
 

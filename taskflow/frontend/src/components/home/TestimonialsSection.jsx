@@ -19,8 +19,8 @@ const TestimonialsSection = () => {
           <h2 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
             Loved by teams worldwide
           </h2>
-          <p className="text-xl text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            See what our customers have to say about Umanager
+        <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+            See what our customers have to say about Task Manager
           </p>
         </div>
 
