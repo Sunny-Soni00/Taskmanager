@@ -115,3 +115,23 @@ async def update_password(payload: dict, session: AsyncSession = Depends(get_ses
     await svc.repo.update(user)
     
     return {"message": "Password updated successfully"}
+
+@router.get("/user/{user_id}")
+async def get_public_profile(user_id: int, session: AsyncSession = Depends(get_session)):
+    """
+    Public endpoint to view user profile by ID
+    Used for viewing team member profiles and verification before inviting
+    """
+    svc = UserService(session)
+    user = await svc.get_by_id(user_id)
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    # Return only public information
+    return {
+        "id": user.id,
+        "name": user.name,
+        "code_id": user.code_id,
+        "profile_picture": user.profile_picture,
+        "created_at": user.created_at
+    }

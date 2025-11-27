@@ -57,6 +57,16 @@ class AuthApi {
     const response = await apiClient.patch('/auth/password', data);
     return response.data;
   }
+
+  /**
+   * Get public user profile by ID
+   * @param {number} userId - User ID
+   * @returns {Promise<object>} Public user profile data
+   */
+  async getPublicProfile(userId) {
+    const response = await apiClient.get(`/auth/user/${userId}`);
+    return response.data;
+  }
 }
 
 export default new AuthApi();

@@ -16,8 +16,10 @@ import TeamsPage from './pages/teams/TeamsPage';
 import ProjectsPage from './pages/projects/ProjectsPage';
 import TasksPage from './pages/tasks/TasksPage';
 import ProfilePage from './pages/profile/ProfilePage';
+import PublicProfilePage from './pages/profile/PublicProfilePage';
 import InvitationsPage from './pages/invitations/InvitationsPage';
 import NotificationsPage from './pages/notifications/NotificationsPage';
+import NotFoundPage from './pages/NotFoundPage';
 
 /**
  * Main App Component
@@ -37,6 +39,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/signup" element={<SignupPage />} />
+            <Route path="/user/:userId" element={<PublicProfilePage />} />
 
             {/* Protected Routes */}
             <Route
@@ -96,8 +99,8 @@ function App() {
               }
             />
 
-            {/* Catch all - redirect to home */}
-            <Route path="*" element={<Navigate to="/" replace />} />
+            {/* Catch all - 404 page */}
+            <Route path="*" element={<NotFoundPage />} />
             </Routes>
           </Router>
         </AuthProvider>
